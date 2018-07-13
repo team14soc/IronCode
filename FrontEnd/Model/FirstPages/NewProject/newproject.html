@@ -1,0 +1,60 @@
+<!--
+File: newproject.html
+Versione: 0.1
+Autore: Anna Poletti
+Registro Modifiche: Anna Poletti, creazione del file e stesura html
+-->
+
+<!DOCTYPE html>
+<html lang="it-IT">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <title>New Project - IronWorks</title> <!-- from detail to general -->
+
+    <!-- meta -->
+    <meta name="description" content="Applicazione web per la realizzazione di diagrammi di robustezza e generazione automatica di codice Java e SQL."/> <!-- max 150 char -->
+    <meta name="keywords" content="diagrammi di robustezza,editor,java,sql,applicazione web,swearoncode"/> <!-- max 10 -->
+    <meta name="author" content="SwearOnCode"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="robots" content="index, follow"/>
+
+    <!-- font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../HomePage/images/favicon.ico"/>
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="./styles/newproject.css" media="all"/>
+    <!--<link rel="stylesheet" type="text/css" href="./styles/mobile.css" media="handheld, screen and (max-width:768px), only screen and (max-device-width:768px)"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="./styles/print.css" media="print"/>-->
+
+    <!-- script -->
+    <script type="text/javascript" src="../../../ExternalLibraries/scripts/jquery.js"></script>
+    <script type="text/javascript" src="../../../Controller/FirstPages/firstpages.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <!-- Titolo della pagina -->
+        <div id="title">
+            <h1>Create New Project</h1>
+        </div>
+        <div id="choice">
+            <p class="insertName">
+                <label class="name" for="projectName">Insert project's name:</label>
+                <input id="projectName" type="text" name="projectName"/>
+            </p>
+            <button class="newB" type="button" title="Create new project"
+                    onclick="createNewProject()"><img src="./images/checked.svg"
+                    class="imgButton"/>
+            </button>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>
